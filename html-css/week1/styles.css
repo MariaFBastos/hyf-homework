@@ -1,0 +1,42 @@
+/*Layout Style*/
+.maingrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: minmax(100px, auto);
+}
+.maingrid > section {
+    padding: 1em;
+}
+.work{
+    grid-column: 2/3;
+    grid-row: 2/7;
+}
+/*Content Style*/
+img {
+    width: 180px;
+    border-radius: 50%;
+    border: 5px solid white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 2em;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #1a3263;
+}
+h3 {
+    color: #004262;
+}
+h4{
+    color: #005a85;
+}
+.bg {
+    background-color: #1a3263;
+}
+.bg > h2, .bg > p {
+    color: white;
+}
