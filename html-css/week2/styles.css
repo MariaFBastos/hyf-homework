@@ -1,0 +1,155 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;    
+}
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: medium;
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+p {
+    color: rgb(139, 138, 138);
+    line-height: 1.5em;
+}
+h1, h2, h3 {
+    text-transform: uppercase;
+    line-height: 50px;
+    font-family: 'Quicksand', sans-serif;
+}
+header {
+    height: 150px;
+    width: 100%;
+    padding-top: 30px;
+    background-color: #f3f3f3;
+    padding-left: 10%;
+    padding-right: 10%;  
+}
+.top-menu {
+    width: 100%;
+    padding: 20px 0 20px 0  ;
+}
+a {
+    text-decoration: none;
+}
+.top-menu a {
+    margin: 10px;
+}
+.banner img {
+    width: 100%;
+    height: 300px;
+}
+.banner {
+    margin-left: -15%;
+    margin-right: -15%;
+    margin-bottom: 5%;
+}
+.wd-industry {
+    width: 40%;
+    height: auto;
+    padding-right: 25px;
+}
+.principal {
+    width: 60%;
+    height: auto;
+    padding-left: 25px;   
+}
+.introduction-grid {
+    width: 40%;
+    height: auto;
+    padding-right: 25px;
+}
+.photo-grid {
+    width: 60%;
+    height: auto;
+    padding-left: 25px;
+}
+.photos img {
+    width: 160px;
+    height: auto;
+    margin-top: 5%;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 15%;
+    padding-top: 30px;
+    margin-top: 10%;
+    background-color: blueviolet; 
+}
+footer h3, footer p, footer a {
+    color: white;
+    line-height: 2em;
+}
+.find-us {
+    width: 25%;
+    height: auto;
+}
+.find-us img{
+    width: auto;
+    height: 180px;
+}
+.about-this-page {
+    width: 25%;
+    height: auto;
+}
+.archives {
+    width: 25%;
+    height: auto;
+}
+.navigation-footer {
+    width: 25%;
+    height: auto;  
+}
+ul{
+    list-style-type: none;
+}
+@media only screen and (max-width: 400px) {
+    h1, h2, h3 {
+        line-height: 30px;
+    }
+    .top-menu {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-container > aside, .main-container > section, .main-container > div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0 10px 0;
+        margin: 0;
+    }
+    .photos img {
+        width: 150px;
+    }
+    .wd-industry, .introduction-grid, .photo-grid {
+        order: 1;
+    }
+    .footer > section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-left: 0;
+        padding-right:  15%;
+        margin: 0;
+    }
+    .banner img {
+       
+        object-fit: cover;
+    }
+    .find-us img{
+        height: auto;
+        width: 200px;
+    }
+}
