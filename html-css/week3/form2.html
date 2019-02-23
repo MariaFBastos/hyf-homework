@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Sign up to yourcustomertaylor.com</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis quod distinctio veniam debitis maiores aliquam?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima expedita deserunt, molestias numquam veritatis optio repellendus sapiente laborum, alias eum nemo tempora quis. Inventore sed dignissimos excepturi explicabo sit, atque a enim, eos qui soluta autem rem tempore numquam iste.</p>
+
+            <h2>Step 2/4 - how can we reach you?</h2>
+        </header>
+        <main class="page__main">
+            <progress value="50" max="100" class="progress-bar"></progress>
+            <form action="form3.html" method="POST" class="signup__form">
+
+                <div class="inline">
+                    <div class="signup_email">
+                        <label>Email</label>
+                        <input type="email" required id="signup—email" name="email" placeholder="email">
+                    </div>
+                    
+                    <div class="signup_phone">
+                        <label>Phone</label>
+                        <input type="tel" id="signup-telephone-number" name="telephone-number" placeholder="telephone number" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" title="Phone Number (Format: +99(99)9999-9999)">
+                    </div>
+                </div>
+                
+                <div class="signup_password">
+                    <label>Password</label>
+                    <input type="password" required id="signup-password" name="password" placeholder="password" minlength="10" pattern="(?=.*?[A-Z]){10,}" title="at least 1 uppercase and 10 characters">
+                </div>
+
+                <div class="signup_repeat_password">
+                    <label>Password repeat</label>
+                    <input type="password" required id="signup-password" name="password" placeholder="repeat password" minlength="10" pattern="(?=.*?[A-Z]){10,}" title="at least 1 uppercase and 10 characters">
+                </div>
+
+                <div class="subscribe_newletter">
+                    <label>Subscribe Newsletter?</label>
+                    <label>weekly news<input type="radio" name="newsletter" required></label>
+                    <label>monthly news<input type="radio" name="newsletter"></label>
+                    <label>don't send me news<input type="radio" name="newsletter"></label>
+                </div>
+
+                <a href="form3.html">
+                    <button type="submit">Next Step</button>
+                </a>
+            </form>
+        </main>
+        <footer></footer>
+    </body>
+</html>
