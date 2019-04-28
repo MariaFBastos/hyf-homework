@@ -7,7 +7,7 @@ let section = document.createElement('section');
 function getGiphy(){
     let input = document.getElementById('input').value;
 
-    fetch('https://api.giphy.com/v1/gifs/search?q='+ input +'&api_key=WuFF3cibrKfQkQk2Wl31TFHpU9bWy1uP')
+    fetch('https://api.giphy.com/v1/gifs/search?q='+ input +'&api_key=WuFF3cibrbWy1uP...')
         .then(response => response.json())
         .then((gifs) => {
             console.log(gifs);
